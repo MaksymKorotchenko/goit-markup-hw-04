@@ -409,7 +409,7 @@ footer .logo-color {
 .portfolio-cell {
   width: calc((100% - 48px) / 3);
   position: relative;
-  overflow: hidden;
+
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -441,6 +441,7 @@ footer .logo-color {
 
 .icon-container {
   position: relative;
+  overflow: hidden;
 }
 
 .portfolio-image {
@@ -448,7 +449,7 @@ footer .logo-color {
 }
 
 .portfolio-cell:hover .overlay {
-  transform: translateY(0);
+  transform: translateY(0%);
 }
 
 .overlay {
@@ -496,8 +497,11 @@ footer .logo {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
+}
 
-  gap: 120px;
+.footer-logo-container {
+  margin-right: 120px;
 }
 
 .icon-footer-container {
@@ -540,6 +544,10 @@ footer .logo {
 .icon-footer-link:hover,
 .icon-footer-link:focus {
   background-color: #31d0aa;
+}
+
+.footer-svg {
+  fill: #f4f4fd;
 }
 
 /*#endregion footer*/
